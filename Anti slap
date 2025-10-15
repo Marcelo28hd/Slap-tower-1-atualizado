@@ -12,20 +12,6 @@ local humanoid = character:WaitForChild("Humanoid")
 local hrp = character:WaitForChild("HumanoidRootPart")
 local camera = workspace.CurrentCamera
 
--- Teleportes ao executar
-if hrp then
-    local originalPosition = hrp.Position
-    hrp.Position = Vector3.new(183.68, -10.70, 79.99)
-    task.wait(0.1)
-    hrp.Position = Vector3.new(-12.85, -10.70, 106.66)
-    task.wait(0.1)
-    hrp.Position = Vector3.new(-185.54, 769.30, 68.42)
-    task.wait(0.1)
-    hrp.Position = Vector3.new(-22.85, -10.70, 20.10)
-    task.wait(0.1)
-    hrp.Position = originalPosition
-end
-
 -- Configurações iniciais da câmera
 local fixedPosition = Vector3.new(47.32, 176.37, 104.47) -- Nova posição da câmera
 local lookDirection = Vector3.new(0, 0, -1).Unit -- Olha para o centro do mapa
